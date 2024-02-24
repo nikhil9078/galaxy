@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #0D1117;
+    color: #F0F6FC;
+}
+
+header {
+    background-color: #1F6F8B;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #FFD369;
+}
+
+.planets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.planet-card {
+    background-color: #1F1F1F;
+    color: #F0F6FC;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 0 30px rgba(255, 191, 0, 0.8);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.planet-card:hover {
+    transform: scale(1.05);
+}
+
+.resident-list {
+    margin-top: 1.5rem;
+    color: #FFD369;
+    font-size: 1.1rem;
+}
+
+.resident-list h3 {
+    margin-bottom: 0.8rem;
+}
+
+.resident-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resident-list li {
+    margin-bottom: 0.4rem;
+    padding-left: 1rem;
+    border-left: 2px solid #1F6F8B;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+button {
+    background-color: #1F6F8B;
+    color: #FFD369;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+button:hover {
+    background-color: #FFD369;
+    color: #1F6F8B;
+}
